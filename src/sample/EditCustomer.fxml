@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="392.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditCustomer">
+    <children>
+        <AnchorPane prefHeight="78.0" prefWidth="950.0" style="-fx-background-color: #2E3348;">
+            <children>
+                <Label alignment="CENTER" layoutX="341.0" layoutY="15.0" prefHeight="47.0" prefWidth="239.0" text="Изменение клиента" textAlignment="CENTER" textFill="#e17108" AnchorPane.leftAnchor="341.0" AnchorPane.rightAnchor="341.4000000000002">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="firstnameTextField" layoutX="37.0" layoutY="109.0" promptText="Имя" />
+        <TextField fx:id="lastnameTextField" layoutX="37.0" layoutY="156.0" promptText="Фамилия" />
+        <TextField fx:id="patronymicTextField" layoutX="37.0" layoutY="202.0" promptText="Отчество" />
+        <DatePicker fx:id="dateOfBirthDatePicker" layoutX="37.0" layoutY="248.0" promptText="Дата рождения" />
+        <TextField fx:id="passportSeriesTextField" layoutX="37.0" layoutY="295.0" promptText="Серия паспорта" />
+        <TextField fx:id="passportNumberTextField" layoutX="222.0" layoutY="109.0" promptText="№ Паспорт" />
+        <TextField fx:id="passportIssuedByTextField" layoutX="222.0" layoutY="156.0" promptText="Кем выдан" />
+        <DatePicker fx:id="passportDateOfIssueDatePicker" layoutX="222.0" layoutY="202.0" promptText="Дата выдачи" />
+        <TextField fx:id="idNumberTextField" layoutX="222.0" layoutY="248.0" promptText="Идент. номер" />
+        <TextField fx:id="placeOfBirthTextField" layoutX="222.0" layoutY="295.0" promptText="Место родения" />
+        <TextField fx:id="addressOfTheActualResidenceTextField" layoutX="409.0" layoutY="109.0" promptText="Адрес факт.проживания" />
+        <TextField fx:id="homePhoneTextField" layoutX="409.0" layoutY="156.0" promptText="Домашний телефон" />
+        <TextField fx:id="mobilePhoneTextField" layoutX="409.0" layoutY="202.0" promptText="Мобильный телефон" />
+        <TextField fx:id="emailTextField" layoutX="409.0" layoutY="248.0" promptText="Email" />
+        <TextField fx:id="placeOfWorkTextField" layoutX="409.0" layoutY="295.0" promptText="Место работы" />
+        <TextField fx:id="positionTextField" layoutX="595.0" layoutY="109.0" promptText="Должность" />
+        <TextField fx:id="placeOfResidenceTextField" layoutX="595.0" layoutY="156.0" promptText="Адрес прописки" />
+        <CheckBox fx:id="retireeCheckBox" layoutX="776.0" layoutY="206.0" text="Пенсионер?" />
+        <TextField fx:id="monthlyIncomeTextField" layoutX="595.0" layoutY="202.0" promptText="Ежемесячный доход" />
+        <Button fx:id="Button_cancel" layoutX="39.0" layoutY="342.0" mnemonicParsing="false" onAction="#buttonCancelOnAction" prefHeight="34.0" prefWidth="91.0" text="Отмена" />
+        <Button fx:id="Button_editCustomer" layoutX="834.0" layoutY="342.0" mnemonicParsing="false" onAction="#buttonEditClientOnAction" prefHeight="34.0" prefWidth="91.0" text="Изменить" />
+        <ComboBox fx:id="cityOfActualResidenceComboBox" layoutX="594.0" layoutY="248.0" prefWidth="150.0" promptText="Выберите из списка" />
+        <Label layoutX="37.0" layoutY="92.0" text="1. Имя" />
+        <Label layoutX="37.0" layoutY="138.0" text="2.Фамилия" />
+        <Label layoutX="37.0" layoutY="185.0" text="3.Отчество" />
+        <Label layoutX="37.0" layoutY="231.0" text="4.Дата рождения" />
+        <Label layoutX="37.0" layoutY="277.0" text="5.Серия паспорта" />
+        <Label layoutX="222.0" layoutY="92.0" text="6.Номер паспорта" />
+        <Label layoutX="222.0" layoutY="138.0" text="7.Кем выдан" />
+        <Label layoutX="222.0" layoutY="185.0" text="8.Дата выдачи" />
+        <Label layoutX="222.0" layoutY="231.0" text="9.Идентификационный номер" />
+        <Label layoutX="222.0" layoutY="277.0" text="10.Место рождения" />
+        <Label layoutX="407.0" layoutY="92.0" text="12.Адрес факт. проживания" />
+        <Label layoutX="407.0" layoutY="138.0" text="13.Домашний телефон" />
+        <Label layoutX="409.0" layoutY="185.0" text="14.Мобильный телефон" />
+        <Label layoutX="407.0" layoutY="231.0" text="15.Email" />
+        <Label layoutX="409.0" layoutY="277.0" text="16.Место работы" />
+        <Label layoutX="594.0" layoutY="92.0" text="17.Должность" />
+        <Label layoutX="594.0" layoutY="138.0" text="18.Адрес прописки" />
+        <Label layoutX="594.0" layoutY="187.0" text="19.Ежемесячный доход" />
+        <ComboBox fx:id="marialStatusComboBox" layoutX="594.0" layoutY="295.0" prefWidth="150.0" promptText="Выберите из списка" />
+        <ComboBox fx:id="citizenshipComboBox" layoutX="776.0" layoutY="109.0" prefWidth="150.0" promptText="Выберите из списка" />
+        <ComboBox fx:id="disabilityComboBox" layoutX="776.0" layoutY="156.0" prefWidth="150.0" promptText="Выберите из списка" />
+        <Label layoutX="594.0" layoutY="231.0" text="20.Город факт. проживания" />
+        <Label layoutX="594.0" layoutY="277.0" text="21.Семейное положение" />
+        <Label layoutX="778.0" layoutY="92.0" text="22.Гражданство" />
+        <Label layoutX="774.0" layoutY="138.0" text="23.Инвалидность" />
+    </children>
+</AnchorPane>

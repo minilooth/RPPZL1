@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="sample.models.Client" table="client" schema="bank">
+        <id name="id">
+            <column name="Id" sql-type="int"/>
+        </id>
+        <property name="surname">
+            <column name="Surname" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="firstname">
+            <column name="Firstname" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="patronymic">
+            <column name="Patronymic" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="dateOfBirth">
+            <column name="DateOfBirth" sql-type="date"/>
+        </property>
+        <property name="passportSeries">
+            <column name="PassportSeries" sql-type="varchar(2)" length="2"/>
+        </property>
+        <property name="passportNumber">
+            <column name="PassportNumber" sql-type="varchar(8)" length="8"/>
+        </property>
+        <property name="passportIssuedBy">
+            <column name="PassportIssuedBy" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="passportDateOfIssue">
+            <column name="PassportDateOfIssue" sql-type="date"/>
+        </property>
+        <property name="idNumber">
+            <column name="IdNumber" sql-type="varchar(18)" length="18"/>
+        </property>
+        <property name="placeOfBirth">
+            <column name="PlaceOfBirth" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="addressOfTheActualResidence">
+            <column name="AddressOfTheActualResidence" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="homePhone">
+            <column name="HomePhone" sql-type="varchar(18)" length="18" not-null="false"/>
+        </property>
+        <property name="mobilePhone">
+            <column name="MobilePhone" sql-type="varchar(18)" length="18" not-null="false"/>
+        </property>
+        <property name="email">
+            <column name="Email" sql-type="varchar(25)" length="25" not-null="false"/>
+        </property>
+        <property name="placeOfWork">
+            <column name="PlaceOfWork" sql-type="varchar(50)" length="50" not-null="false"/>
+        </property>
+        <property name="position">
+            <column name="Position" sql-type="varchar(50)" length="50" not-null="false"/>
+        </property>
+        <property name="placeOfResidence">
+            <column name="PlaceOfResidence" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="retiree">
+            <column name="Retiree" sql-type="tinyint"/>
+        </property>
+        <property name="monthlyIncome">
+            <column name="MonthlyIncome" sql-type="decimal(10)" precision="10" not-null="false"/>
+        </property>
+        <property name="citizenshipId">
+            <column name="CitizenshipId" sql-type="int" not-null="true"/>
+        </property>
+        <property name="cityOfActualResidenceId">
+            <column name="CityOfActualResidenceId" sql-type="int" not-null="true"/>
+        </property>
+        <property name="disabilityId">
+            <column name="DisabilityId" sql-type="int" not-null="true"/>
+        </property>
+        <property name="marialStatusId">
+            <column name="Marialstatusid" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

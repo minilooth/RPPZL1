@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="449.0" prefWidth="1200.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerListForm">
+   <children>
+      <ScrollPane layoutY="74.0" prefHeight="400.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <TableView fx:id="customersTableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="2490.0">
+              <columns>
+                <TableColumn fx:id="idColumn" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Ид" />
+                <TableColumn fx:id="firstnameColumn" prefWidth="100.0" text="Имя" />
+                  <TableColumn fx:id="surnameColumn" prefWidth="100.0" text="Фамилия" />
+                  <TableColumn fx:id="patronymicColumn" prefWidth="100.0" text="Отчество" />
+                  <TableColumn fx:id="dateOfBirthColumn" prefWidth="100.0" text="Дата рождения" />
+                  <TableColumn fx:id="passportSeriesColumn" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="Серия паспорта" />
+                  <TableColumn fx:id="passportNumberColumn" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="Номер паспорта" />
+                  <TableColumn fx:id="passportIssuedByColumn" prefWidth="99.0" text="Кем выдан" />
+                  <TableColumn fx:id="passportDateOfIssueColumn" prefWidth="99.0" text="Дата выдачи" />
+                  <TableColumn fx:id="idNumberColumn" prefWidth="99.0" text="Идентификационный номер" />
+                  <TableColumn fx:id="placeOfBirthColumn" prefWidth="99.0" text="Место рождения" />
+                  <TableColumn fx:id="addressOfTheActualResidenceColumn" prefWidth="99.0" text="Адрес факт.проживания" />
+                  <TableColumn fx:id="homePhoneColumn" prefWidth="95.2000732421875" text="Домашний телефон" />
+                  <TableColumn fx:id="mobilePhoneColumn" prefWidth="103.199951171875" text="Мобильный телефон" />
+                  <TableColumn fx:id="emailColumn" prefWidth="99.0" text="Эмэйл" />
+                  <TableColumn fx:id="placeOfWorkColumn" prefWidth="99.0" text="Место работы" />
+                  <TableColumn fx:id="positionColumn" prefWidth="99.0" text="Должность" />
+                  <TableColumn fx:id="placeOfResidenceColumn" prefWidth="99.0" text="Адрес прописки" />
+                  <TableColumn fx:id="retireeColumn" prefWidth="99.0" text="Пенсионер" />
+                  <TableColumn fx:id="monthlyIncomeColumn" prefWidth="99.0" text="Ежемесячный доход" />
+                  <TableColumn fx:id="cityOfActualResidenceColumn" prefWidth="99.0" text="Город факт.проживания" />
+                  <TableColumn fx:id="marialStatusColumn" prefWidth="99.0" text="Семейное положение" />
+                  <TableColumn fx:id="citizenshipColumn" prefWidth="99.0" text="Гражданство" />
+                  <TableColumn fx:id="disabilityColumn" prefWidth="99.0" text="Инвалидность" />
+                  <TableColumn fx:id="deleteColumn" prefWidth="99.0" />
+                  <TableColumn fx:id="editColumn" prefWidth="99.0" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="504.0" layoutY="14.0" prefHeight="17.0" prefWidth="192.0" text="Информация о клиентах" textFill="#e17108" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
